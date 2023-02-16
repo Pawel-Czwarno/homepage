@@ -1,26 +1,19 @@
 .navigation {
     background-color: #949494;
     color: #f8f8f8;
+    font-size: 15px;
     max-width: 1000px;
     border-radius: 25px;
     margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
 }
 
-.navigation__list {
-    font-size: 20px;
-    list-style-type: none;
-    padding-left: 50px;
-    padding-top: 20px;
-    color: #f8f8f8;
-}
-
-.navigation__listElement {
-    border-bottom: 1px solid #f8f8f8;
-    border-color: #f38201;
-    max-width: 400px;
-    margin: 20px 0;
+.navigation__element {
+    border-left: 1px solid #f38201;
+    margin: 40px 0;
     letter-spacing: 0.2em;
-    flex-direction: row;
+    padding-left: 10px;
 }
 
 .navigation__link {
@@ -30,24 +23,4 @@
 
 .navigation__link:hover {
     color: #f38201;
-}
-
-.navigation__button {
-    text-align: right;
-    margin: 0px 30px auto;
-    padding-bottom: 30px;
-}
-
-.navigation__buttonTheme {
-    background-color: #f38201;
-    border: none;
-    font-family: 'Montserrat', sans-serif;
-    color: #4d4d4d;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 12px;
-    border-radius: 20px;
-    box-shadow: 5px -5px 30px -3px #f8f8f8;
-    min-width: 200px;
-    cursor: pointer;
 }

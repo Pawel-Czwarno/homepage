@@ -3,13 +3,33 @@
     text-align: center;
     color: #f8f8f8;
     max-width: 1000px;
-    padding: 30px 0;
+    padding: 30px 0px 10px;
     border-radius: 25px;
     margin: 20px auto;
+    letter-spacing: 0.2em;
+    font-size: 15px;
 }
 
 .header__title {
     font-weight: normal;
     letter-spacing: 0.5em;
     font-size: 40px;
+}
+
+.navigation__button {
+    text-align: right;
+    margin: 0px 10px auto;
+}
+
+.navigation__buttonTheme {
+    background-color: #f38201;
+    border: none;
+    color: #4d4d4d;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 20px;
+    box-shadow: 5px -5px 30px -3px #f8f8f8;
+    min-width: 200px;
+    cursor: pointer;
 }

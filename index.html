@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/navigation.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
-    <script defer src="js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
+    <link href="./CSS/header.css" rel="stylesheet">
+    <link href="./CSS/main.css" rel="stylesheet">
+    <link href="./CSS/navigation.css" rel="stylesheet">
+    <link href="./CSS/footer.css" rel="stylesheet">
+    <script defer src="./JS/script.js"></script>
 </head>
 
 <body class="body js-body">
@@ -25,27 +25,26 @@
     <header class="header">
         <h1 class="header__title">Paweł Czwarno</h1>
         <p>Witaj na mojej stronie domowej</p>
+        <div class="navigation__button">
+            <button class="navigation__buttonTheme js-navigation__buttonTheme">Włącz <span
+                    class="js-themeName">ciemny</span> motyw</button>
+        </div>
     </header>
 
     <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__listElement">
-                <a class="navigation__link" href="#zdjecie">Zdjęcie</a>
-            </li>
-            <li class="navigation__listElement">
-                <a class="navigation__link" href="#wyksztalcenie">Wykształcenie</a>
-            </li>
-            <li class="navigation__listElement">
-                <a class="navigation__link" href="#doswiadczenie">Doświadczenie zawodowe</a>
-            </li>
-            <li class="navigation__listElement">
-                <a class="navigation__link" href="#poza-praca">Poza pracą</a>
-            </li>
-        </ul>
-        <p class="navigation__button">
-            <button class="navigation__buttonTheme js-navigation__buttonTheme">Włącz <span
-                    class="js-themeName">ciemny</span> motyw</button>
-        </p>
+        <div class="navigation__element">
+            <a class="navigation__link" href="#zdjecie">Zdjęcie</a>
+        </div>
+        <div class="navigation__element">
+            <a class="navigation__link" href="#wyksztalcenie">Wykształcenie</a>
+        </div>
+        <div class="navigation__element">
+            <a class="navigation__link" href="#doswiadczenie">Doświadczenie zawodowe</a>
+        </div>
+        <div class="navigation__element">
+            <a class="navigation__link" href="#poza-praca">Poza pracą</a>
+        </div>
+
     </nav>
 
     <main>
@@ -214,10 +213,16 @@
     </main>
 
     <footer class="footer">
-        <p>© Paweł Czwarno 2023</p>
+        <p class="footer__element">© Paweł Czwarno 2023</p>
         <p>
             <a class="footer__link" href="mailto:pawel.czwarno@protonmail.com">
                 Napisz do mnie
+            </a>
+        </p>
+        <p>
+            <a href="https://github.com/Pawel-Czwarno" rel="noreferrer noopener" target="_blank"><img
+                    class="footer__link footer__link--git"
+                    src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="Github_icon">
             </a>
         </p>
     </footer>
