@@ -16,12 +16,12 @@
     font-size: 40px;
 }
 
-.navigation__button {
+.header__button {
     text-align: right;
     margin: 0px 10px auto;
 }
 
-.navigation__buttonTheme {
+.header__buttonTheme {
     background-color: #f38201;
     border: none;
     color: #4d4d4d;
