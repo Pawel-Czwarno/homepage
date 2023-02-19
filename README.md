@@ -1,5 +1,3 @@
-# homepage
-My homepage
 # Paweł Czwarno Homepage
 
 This project is a homepage made by Paweł Czwarno. You can finde here some information abuot me. It's my first ever made webpage so also it can be seen how the progress in html, css and js was made.
