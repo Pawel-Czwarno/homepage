@@ -10,7 +10,7 @@ let photoToggle = document.querySelector(".js-photoToggle");
 buttonTheme.addEventListener("click", () => {
     body.classList.toggle("body--dark");
 
-    themeName.innerText = body.classList.contains("body--dark") ? "jasny" : "ciemny";
+    themeName.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
 });
 
 buttonPhoto.addEventListener("click", () => {

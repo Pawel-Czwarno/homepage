@@ -26,11 +26,7 @@
 
 .article__photo {
     border-radius: 50%;
-    max-width: 189px;
-    max-height: 200px;
-    outline-color: #f38201;
-    outline-width: 1px;
-    outline-style: solid;
+    outline: solid 1px #f38201;
 }
 
 .js-photoToggle {

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paweł Czwarno - strona domowa</title>
+    <meta property="og:image" content="./images/homepage.png">
+    <link rel="icon" href="./images/homepage_ico.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,8 +28,8 @@
         <h1 class="header__title">Paweł Czwarno</h1>
         <p>Witaj na mojej stronie domowej</p>
         <div class="header__button">
-            <button class="header__buttonTheme js-header__buttonTheme">Włącz <span
-                    class="js-themeName">ciemny</span> motyw</button>
+            <button class="header__buttonTheme js-header__buttonTheme">Włącz <span class="js-themeName">ciemne</span>
+                tło</button>
         </div>
     </header>
 
@@ -51,7 +53,7 @@
 
         <article class="article article--photo" id="zdjecie">
             <h2 class="article__header article__header--photo">Zdjęcie</h2>
-            <img class="article__photo js-article__photo" src="https://i.ibb.co/VY8kpc4/PC.jpg" alt="Paweł Czwarno">
+            <img class="article__photo js-article__photo" src="./images/PC.jpg" alt="Paweł Czwarno">
             <p>
                 <button class="article__buttonPhoto js-article__buttonPhoto">Schowaj zdjęcie</button>
             </p>
@@ -104,14 +106,16 @@
         <article class="article" id="poza-praca">
             <h2 class="article__header">Poza pracą</h2>
             <p>
-                Poza pracą jestem szczęśliwym mężem i ojcem dwóch córek. Już to zapełnia prawie cały czas wolny,
+                Poza pracą jestem szczęśliwym mężem i ojcem dwóch córek. Już to zapełnia prawie cały wolny czas,
                 ale staram się ponadto pielęgnować również swoje zainteresowania. Przede wszystkim lubię koszykówkę.
-                Kiedyś trenowałem i grałem w kilku zespołach. Dzisiaj to głównie bierne kibicowanie i śledzenie
+                Kiedyś trenowałem i grałem w kilku zespołach. Dzisiaj jest to głównie kibicowanie i śledzenie
                 rozgrywek.
-                <br>Ponadto warzę swoje piwo i lubię uwędzić jakieś mięso w przydomowej wędzarni.
+                <br>Ponadto warzę swoje piwo i lubię uwędzić mięso w przydomowej wędzarni.
             </p>
             <p>
-                Jeszcze jednym moim hobby jest kolekcjonowanie kart telefonicznych. <i>Fonokartystyka</i> była
+                Jeszcze jednym moim hobby jest kolekcjonowanie kart telefonicznych.
+                <a class="article__link" rel="noreferrer noopener" target="_blank"
+                    href="https://pl.wikipedia.org/wiki/Fonotelistyka"><i>Fonotelistyka</i></a> była
                 popularna w latach '90 i w pierwszych latach XXI w. Później telefonia komórkowa wyparła publiczne
                 automaty telefoniczne i ostatecznie zniknęły one ostatecznie z przestrzeni publicznej w drugiej
                 dekadzie obecnego stulecia.<br> Od 1991 r. do 2004 r. Telekomunikacja Polska wydała 1407 różnych
@@ -221,8 +225,7 @@
         </p>
         <p>
             <a href="https://github.com/Pawel-Czwarno" rel="noreferrer noopener" target="_blank"><img
-                    class="footer__link footer__link--git"
-                    src="https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg" alt="Github_icon">
+                    class="footer__link footer__link--git" src="./images/github_ico.png" alt="Github_icon">
             </a>
         </p>
     </footer>

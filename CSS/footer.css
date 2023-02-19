@@ -1,6 +1,7 @@
 .footer {
     background-color: #949494;
     font-size: 15px;
+    letter-spacing: 0.2em;
     color: #f8f8f8;
     border-radius: 25px;
     max-width: 1000px;
@@ -8,7 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    letter-spacing: 0.2em;
+    flex-wrap: wrap;
 }
 
 .footer__element {
@@ -27,9 +28,10 @@
 
 .footer__link:hover {
     color: #f38201;
+    border-bottom: 1px solid #f38201;
 }
 
 .footer__link--git {
-    max-width: 30px;
-    max-height: 30px;
+    max-width: 29px;
+    max-height: 29px;
 }
