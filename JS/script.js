@@ -1,20 +1,29 @@
-console.log("Witaj na stronie domowej Pawła Czwarno!");
+{
+    const welcome = () => {
+        console.log("Witaj na stronie domowej Pawła Czwarno!");
+    };
 
-let body = document.querySelector(".js-body");
-let themeName = document.querySelector(".js-themeName");
-let buttonTheme = document.querySelector(".js-header__buttonTheme");
-let buttonPhoto = document.querySelector(".js-article__buttonPhoto");
-let photo = document.querySelector(".js-article__photo");
-let photoToggle = document.querySelector(".js-photoToggle");
+    const onPhotoToggle = () => {
+        const photo = document.querySelector(".js-article__photo");
+        const buttonPhoto = document.querySelector(".js-article__buttonPhoto");
+        photo.classList.toggle("js-photoToggle");
+        buttonPhoto.innerText = photo.classList.contains("js-photoToggle") ? "Pokaż zdjęcie" : "Schowaj zdjęcie";
+    };
 
-buttonTheme.addEventListener("click", () => {
-    body.classList.toggle("body--dark");
+    const onBackgroundToggle = () => {
+        const body = document.querySelector(".js-body");
+        const backgroundName = document.querySelector(".js-backgroundName");
+        body.classList.toggle("body--dark");
+        backgroundName.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
+    };
 
-    themeName.innerText = body.classList.contains("body--dark") ? "jasne" : "ciemne";
-});
+    const init = () => {
+        const buttonBackground = document.querySelector(".js-header__buttonBackground");
+        const buttonPhoto = document.querySelector(".js-article__buttonPhoto");
+        buttonBackground.addEventListener("click", onBackgroundToggle);
+        buttonPhoto.addEventListener("click", onPhotoToggle);
+        welcome();
+    };
 
-buttonPhoto.addEventListener("click", () => {
-    photo.classList.toggle("js-photoToggle");
-
-    buttonPhoto.innerText = photo.classList.contains("js-photoToggle") ? "Pokaż zdjęcie" : "Schowaj zdjęcie";
-});
+    init();
+}
